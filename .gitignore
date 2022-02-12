@@ -11,5 +11,13 @@
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
 
+.DS_Store
+goproxy
+go.sum
+cmd/version.go
+
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+test/
+
