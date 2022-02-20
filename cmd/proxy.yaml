@@ -1,0 +1,7 @@
+web:
+  addr: 127.0.0.1:9000
+log:  
+  level: Debug
+  path: /Users/wadahana/workspace/stock/proxy.go/var/log
+leveldb:
+  path: /Users/wadahana/workspace/stock/proxy.go/var/leveldb
