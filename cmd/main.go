@@ -37,8 +37,15 @@ func main() {
     if err != nil {
         panic(err);
     }
+    err = db.Start();
+    if err != nil {
+        panic(err);
+    }
     logger.Infof("version:     %s\n", _version);
     logger.Infof("git branch:  %s\n", _gitBranch);
     logger.Infof("build time:  %s\n", _buildTime);
+
+    db.Stop();
+    base.Stop();
     return;
 }
